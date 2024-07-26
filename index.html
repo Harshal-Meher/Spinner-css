@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner</title>
+</head>
+<style>
+    .spin{
+        height: 50px;
+        width: 50px;
+        border: 3px solid blue;
+        border-radius:50% ;
+        border-top-color: #ccc;
+        animation: sp 1s linear infinite;
+        display: block;
+        margin: auto;
+        
+    }
+    
+    @keyframes sp{
+        0%{
+            transform:rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+  h1{
+    text-align: center;
+  }
+
+</style>
+<body>
+    <div class="sprinner">
+        <h1>Spinner</h1>
+        <div class="spin">
+
+        </div>
+    </div>
+</body>
+</html>
